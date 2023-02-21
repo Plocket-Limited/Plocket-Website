@@ -1,0 +1,112 @@
+:root {
+    color: #000000;
+    background: #ffffff;
+}
+
+h1 {
+    margin: 0.5rem
+}
+
+.home-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
+    padding: 20px;
+}
+
+.team-image {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.container {
+    position: static;
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Buttons */
+.button {
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+
+.primary {
+    background-color: #87aa60;
+    color: #ffffff;
+}
+
+.primary:hover {
+    background-color: #a0bc81;
+    color: #ffffff;
+}
+
+
+/* Navigation */
+nav {
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+nav img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+nav a {
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: 1px #000;
+}
+
+/* Team Page */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
+}
+
+@media screen and (max-width: 800px) {
+    .team-members {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr))
+    }
+}
+
+.team-member {
+    text-align: center;
+    margin: 2rem;
+    margin-top: 5rem;
+}
+
+.team-member>img {
+    max-width: 8rem;
+    
+}
+
+/* Media */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: #b8b8b8;
+        background: #000000;
+    }
+    
+    /* Navigation */
+    nav a {
+        color: #ffffff
+    }
+}
