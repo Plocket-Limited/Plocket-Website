@@ -11,7 +11,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15rem;
+    max-width: 80%;
     padding: 20px;
 }
 
@@ -55,13 +55,14 @@ h1 {
 /* Navigation */
 nav {
     display: grid;
-    grid-template-columns: 5rem 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
     align-items: center;
 }
 
 nav img {
     display: block;
-    width: 80%;
+    min-width: 4rem;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -73,6 +74,10 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     border-left: 1px solid #cccccc;
+}
+
+nav a:first-child {
+    border: none
 }
 
 /* Team Page */
