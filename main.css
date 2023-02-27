@@ -24,7 +24,9 @@ h1 {
 .container {
     position: static;
     display: flex;
-    margin: 1rem;
+    margin: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
